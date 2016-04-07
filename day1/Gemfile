@@ -1,0 +1,4 @@
+source "http://rubygems.org"
+gem "sinatra"
+gem "artii"
+gem "sinatra-contrib"

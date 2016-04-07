@@ -1,0 +1,26 @@
+<!-- views/add.erb -->
+<!doctype html>
+<html>
+<head>
+  <title>Add | Online Calculator</title>
+</head>
+<body>
+  
+<!-- views/add.erb -->
+<h1>Add</h1>
+
+
+<form action= "calculate_add" method = "POST">
+<!--<label for= "number1">first number: </label>-->
+<input type="number" name="first_number" placeholder="1st number"> (+ or - or * or /)
+<input type="number" name="second_number" placeholder="2nd number">
+<!--placeholder palabra escrita dentro del input desseleccionada-->
+<!--<label for= "number2">Second number: </label>-->
+<button type="submit" name ="operation" value="sum">Sum</button>
+<button type="submit" name ="operation" value="subt">Subtraction</button>
+<button type="submit" name ="operation" value="multi">Multiplication</button>
+<button type="submit" name ="operation" value="div">Division</button>
+</form>
+
+</body>
+</html>
