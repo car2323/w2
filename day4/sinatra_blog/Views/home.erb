@@ -1,0 +1,30 @@
+<h1>Welcome to the BLOG</h1>
+ <body>
+ <p>
+ <ul> 
+   <h3>User: <%= @blog_object1.user %> </h3>
+    <% @blog_object1.posts.each do |auxarray| %>
+    <li><%= auxarray.title %></li>
+        <p><%= auxarray.text %></p>
+        <p><%= auxarray.created_at.strftime("%m/%d/%Y %H:%M")%></p>
+    <%end%>
+
+</ul>
+
+
+<a href="/new_post">
+  add new post
+</a>
+
+  
+
+<form action= "sort_by_created" method = "POST">
+
+<select name ="operation">
+  <option  value="ASC" selected>Ascending</option>
+  <option  value="DESC" >Descending</option>
+</select>
+<button type="submit">sort by created</button>
+</form>
+
+</body>

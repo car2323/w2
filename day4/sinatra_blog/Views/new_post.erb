@@ -1,0 +1,16 @@
+<h1>New Post</h1>
+ 
+
+  
+<body>
+  
+<!-- views/add.erb -->
+<h1></h1>
+<form action= "add_post" method = "POST">
+<!--<label for= "number1">first number: </label>-->
+<input type="text" name="title" placeholder="Title">
+<input type="text" name="text" placeholder="Text">
+<input type="text" name="created_at" placeholder= "<%= Time.now.strftime("%m/%d/%Y %H:%M")%>" disabled> 
+<button type="submit">add post</button>
+</form>
+</body>
