@@ -1,0 +1,22 @@
+<h1>Welcome to the Movie Game</h1>
+ <body>
+<h3>Which one was filmed in 1997?</h3>
+<h3>click one picture</h3>
+
+    <p> 
+    <% @array_valid_movies.each do |aux_array_movie| %>
+        <img src="<%= aux_array_movie.poster %>" width="200" height="400" onClick="veri_answer();"></img> 
+        <script language = "javascript">
+        function veri_answer()
+        {
+            <% if  aux_array_movie.poster == @correct_url %>
+                   alert("C O R R E C T")
+            <% else %>
+                   <%= puts aux_array_movie.poster %>
+                   alert("E R R O R")
+            <% end %>
+        }
+    </script>    
+    <%end%>
+    </p> 
+</body>
